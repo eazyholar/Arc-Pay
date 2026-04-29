@@ -3,10 +3,11 @@ const nextConfig = {
   webpack: (config) => {
     config.externals.push(
       "pino-pretty",
-      "lokijs",
+      "lokijs", 
       "encoding",
       "@react-native-async-storage/async-storage",
-      "@farcaster/mini-app-solana"
+      "@farcaster/mini-app-solana",
+      "cbw-sdk"
     );
     return config;
   },

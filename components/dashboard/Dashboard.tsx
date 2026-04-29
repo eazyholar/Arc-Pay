@@ -1,7 +1,7 @@
 "use client";
 import { useWalletStore } from "../../store/wallet-store";
 import { Zap, LogOut } from "lucide-react";
-import { ConnectKitButton } from "connectkit";
+import { WalletConnectButton } from "../wallet/WalletConnectButton";
 import { useAccount } from "wagmi";
 import { BalanceCard } from "./BalanceCard";
 import { SendReceive } from "./SendReceive";
@@ -29,7 +29,7 @@ export function Dashboard() {
             </div>
           </div>
           <div className="flex items-center gap-3">
-            <ConnectKitButton />
+            <WalletConnectButton />
             {user && (
               <button
                 onClick={logout}
